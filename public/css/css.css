@@ -1,0 +1,56 @@
+/*Bootstrap Editing*/
+
+.navbar{
+    opacity: .90;
+    border-radius: 0px;
+
+}
+
+.btn{
+    border-radius: 0px;
+}
+
+/*Custom*/
+.   body{
+    backgroud-color: #1a1a1a;
+
+}
+
+.backImg{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://pixabay.com/static/uploads/photo/2014/06/16/23/39/black-370118_960_720.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.logo{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height:auto;
+
+}
+.slogan{
+    text-align: center;
+    font-style: italic;
+    font-size: 42px;
+    font-family: 'Raleway', sans-serif;
+
+}
+.text-subtitle{
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+}
+
+
+
