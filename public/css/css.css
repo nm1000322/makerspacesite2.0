@@ -9,6 +9,10 @@
 .btn{
     border-radius: 0px;
 }
+.btn.btn-default{
+    background-color: hsl(0, 0%, 21%) !important;
+    color: white;
+}
 
 /*Custom*/
 .   body{
@@ -51,6 +55,29 @@
     font-family: 'Raleway', sans-serif;
     font-size: 32px;
 }
+.nav-form{
+    padding: 10px;
+}
+.dropdown-menu.innav{
+    font-family: 'Raleway', sans-serif;
+    width: 400px;
+    margin: 5px;
+    background-color: #1a1a1a;
+    color: white;
 
+}
+body{
+    background-color: #1a1a1a;
+}
+.form-control.login{
+    border-radius: 0;
+    background-color: #1a1a1a;
+    border-color: white;
+    font-family: 'Raleway', sans-serif;
+}
+.form-title{
+    padding: 5px;
+    font-size: 20px;
 
+}
 

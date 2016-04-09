@@ -1,6 +1,7 @@
 <html>
 <head>
   <title>Westport Library Makerspace</title>
+  <meta name="viewport" content="width=device-width">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,400italic' rel='stylesheet' type='text/css'>
   <link href="/css/css.css" rel="stylesheet">
@@ -29,7 +30,25 @@
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Login</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <span class="caret"></span></a>
+          <ul class="dropdown-menu innav">
+            <div class="form-title">Coach Login</div>
+            <form class="nav-form">
+              <div class="form-group">
+                <label>E-mail</label>
+                <input placeholder="E-mail" type="text" class="form-control login">
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <input type="password" placeholder="Password" class="form-control login">
+              </div>
+
+              <button class="btn btn-default"type="submit">Login</button>
+
+            </form>
+          </ul>
+        </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
