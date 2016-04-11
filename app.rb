@@ -14,13 +14,8 @@ use Rack::Session::Cookie, :key => 'rack.session',
 get '/' do
   erb :index
 end
-get '/dashboard' do
-  if session[:visited]
-    @user = User.first(:id => session[:id])
-    erb :dashboard
-  else
-    redirect '/'
-  end
+get '/signin' do
+    erb :signin
 end
 
 ###########POSTS##############
@@ -55,4 +50,25 @@ post '/user/create' do
     redirect '/'
   end
 
+end
+post '/sign/:id' do
+  user = User.first(:id => session[:id])
+  Pony.mail(
+      :to => 'nqmetke@gmail.com',
+      :from => 'betamakerspace@gmail.com',
+      :subject=> "New Training Request from #{params[:firstname]} #{params[:lastname]}",
+      :body => "This person would like to train on #{params[:date]} at #{params[:time]}. If you wish to contact #{params[:firstname]}, his/her email is #{params[:email]}",
+      :via => :smtp,
+      :via_options =>{
+          :address              => 'smtp.gmail.com',
+          :port                 => '587',
+          :enable_starttls_auto => true,
+          :user_name            => 'betamakerspace',
+          :password             => 'wplmakerspace',
+          :authentication       => :plain,
+          :domain               => 'localhost.localdomain'
+
+
+      }  )
+  puts "Hey!"
 end

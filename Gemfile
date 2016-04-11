@@ -6,6 +6,5 @@ gem 'sequel'
 gem 'bcrypt'
 gem 'pony'
 gem 'html-sanitizer'
-
 #gem 'passenger'
 #gem 'pg'
